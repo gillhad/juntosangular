@@ -1,4 +1,3 @@
-
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link
@@ -23,15 +22,11 @@
 <meta name="msapplication-TileColor" content="#da532c" />
 <meta name="theme-color" content="#774040" />
 <title>Viajando en pareja</title>
-<!--aunnosquedaporviajar / -->
-
-
 
 <main-header parallaxView="parallaxhome"></main-header>
- 
+
 <main>
   <section class="es">
-    <!-- Section en castellano -->
     <p class="explain">Bienvenidos a nuestro pequeño rincón</p>
     <article>
       <p class="espacio, minititulos">¿A dónde quieres ir?</p>
@@ -44,11 +39,16 @@
         width="800"
         height="400"
       />
-      <map-component *ngFor="let country of mapCountries"  name="{{country.name}}" path="{{country.path}}" coords="{{country.coords}}"></map-component>
+      <map-component
+        *ngFor="let country of mapCountries"
+        name="{{ country.name }}"
+        path="{{ country.path }}"
+        coords="{{ country.coords }}"
+      ></map-component>
     </div>
     <div class="countrylist">
       <ol class="commonlist">
-        <li><a routerLink="/destinations">Europe</a></li>
+        <li><a routerLink="/destinations">Europa</a></li>
         <li><a routerLink="/destinations">America</a></li>
         <li><a routerLink="/destinations">Africa</a></li>
         <li><a routerLink="/destinations">Asia</a></li>
@@ -58,86 +58,15 @@
     <div>
       <p class="espacio, minititulos">Posts recientes</p>
       <ul class="postreciente">
-        <li  *ngFor="let post of posts" >
-          <recent-post title="{{post.title}}" url="{{post.path}}" ima="{{post.img}}" ></recent-post>
+        <li *ngFor="let post of posts">
+          <recent-post
+            title="{{ post.title }}"
+            url="{{ post.path }}"
+            ima="{{ post.img }}"
+          ></recent-post>
         </li>
       </ul>
     </div>
   </section>
-
-  <!--Section english -->
-  <!--<section class="en">
-              <p class="explain" >Welcome to our small corner</p>               
-              <article>
-                  <p class="espacio, minititulos">Where do you want to go?</p>
-                  
-              </article>   
-              <br>
-              <br>
-              <br>
-              <div class="map" >
-                  <img src="/../assets/images/Continentscountries.png" alt="mapa paises" usemap="#countriesen" width="800" height="555">
-                 <map class="en" name="countriesen">
-                     <area alt="mapaen" shape="circle" coords="326,127,10" href="/Destinos/marruecos.html?lang=en">
-                 </map>
-              </div>
-              <div class="countrylist">
-                 <ol class="commonlist">                       
-                     <li><a href="Destinos/destinos.html?lang=en#america">America</a></li>
-                     <li><a href="Destinos/destinos.html?lang=en#europa">Europe</a></li>
-                     <li><a href="Destinos/destinos.html?lang=en#africa">Africa</a></li>
-                     <li><a href="Destinos/destinos.html?lang=en#asia">Asia</a></li>
-                     <li><a href="Destinos/destinos.html?lang=en#oceania">Oceania</a></li>
-                 </ol>
-              </div>  
-                            
-              <div>
-                  <p class="espacio, minititulos">Recent</p><br>
-              
-                  <ul class="postreciente">
-                      <li>
-                          <figure>
-                              <a href="/Destinos/marruecos.html?lang=en"><img src="../assets/images/marruecosportada.jpg" alt="Destino1" ></a>
-                              <figcaption class="commonlist"> <a href="/Destinos/marruecos.html?lang=en">Join us in our moroccan travel</a> </figcaption>
-                          </figure>
-                      </li>
-                      <li>                   
-                          <figure>
-                              <a href="/Comida/comida.html?lang=en"><img src="../assets/images/burguer.jpg" alt="Destino1" ></a>
-                              <figcaption class="commonlist"><a href="/Comida/comida.html?lang=en"> Discover foods from the world</a>  </figcaption>
-                          </figure>
-                      </li>  
-                  </ul>
-
-
-              </div>
-          </section> -->
 </main>
 <footer-component></footer-component>
-
-<script src="CSS/myscript.js"></script>
-<!-- Aqui linkaremos el fichero de nuestros javascripts -->
-<script type="module">
-
-import { initializeApp } from "firebase/app";
-const firebaseConfig = {
-  apiKey: "AIzaSyBZuh0SGTcKZj2mGAR_hpJjH1ZMd7zorlY",
-  authDomain: "juntosangular.firebaseapp.com",
-  projectId: "juntosangular",
-  storageBucket: "juntosangular.appspot.com",
-  messagingSenderId: "693525176873",
-  appId: "1:693525176873:web:6ab686d4a0d84376187238"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

@@ -8,71 +8,44 @@
       margin-right: 5%;
     }
     
-    /*header*/
-    .topmenu img{
-      height: 100px;
-    }
+    // /*header*/
+    // .topmenu img{
+    //   height: 100px;
+    // }
     
     
-    .topmenu{
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 60px;   
-      font-family: 'Amatic SC';
-      font-style: italic;
-      color: rgb(226, 99, 120);
-      font-weight: bolder;
-    }
+    // .topmenu{
+    //   text-align: center;
+    //   margin-bottom: 10px;
+    //   font-size: 60px;   
+    //   font-family: 'Amatic SC';
+    //   font-style: italic;
+    //   color: rgb(226, 99, 120);
+    //   font-weight: bolder;
+    // }
     
-    .topbar{
-      text-align: center;
-      background-color: #cbe682; 
-      opacity: 80%;
-      height: 40px;
-    }
+    // .topbar{
+    //   text-align: center;
+    //   background-color: #cbe682; 
+    //   opacity: 80%;
+    //   height: 40px;
+    // }
     
-    .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    // .center {
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 50%;
     
-    }
-    .topnav{
-      opacity: 100%;
-      overflow: hidden;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      z-index: 50;
-    }
+    // }
     
-    .sticky {
-      position: sticky;
-      position: -webkit-sticky;
-      top: 0;
-      width: 100%;
-      z-index: 50;
-    }
     
-    .sticky + .content {
-      padding-top: 60px;
-    }
-    .flechatop{
-      opacity: 40%;
-      display: block;
-      bottom: 20px;
-      right: 20px;
-      position: fixed;
-    }
-    .flechatop img{
-      height: 40px;
-    }
-    
-    :target::before{
-      content: "";
-      position: relative;
-      display: block;
-      top: 100px;
-    }
+    // :target::before{
+    //   content: "";
+    //   position: relative;
+    //   display: block;
+    //   top: 100px;
+    // }
     
     /* body */
     .responsive {
@@ -125,108 +98,47 @@
     text-shadow: 1px 1px 3px hotpink;
   }
     
-    #listamenu li{
+    // #listamenu li{
                     
-        display:inline;
-        padding-left:20px;
-        padding-right:30px;
-        line-height: 40px;
-    }
-    #listamenu a{
-      font-size: 25px;
-      font-weight: bold;
-      color: rgb(23, 122, 48);
-      text-decoration: solid;
-      text-shadow: 1px 1px 3px rgb(112, 189, 112);
-      font-family: 'Amatic SC';
-    }
+    //     display:inline;
+    //     padding-left:20px;
+    //     padding-right:30px;
+    //     line-height: 40px;
+    // }
+    // #listamenu a{
+    //   font-size: 25px;
+    //   font-weight: bold;
+    //   color: rgb(23, 122, 48);
+    //   text-decoration: solid;
+    //   text-shadow: 1px 1px 3px rgb(112, 189, 112);
+    //   font-family: 'Amatic SC';
+    // }
     
-    #listamenu a:hover, a:active{
-      text-shadow: 1px 1px 3px hotpink;
-    }
+    // #listamenu a:hover, a:active{
+    //   text-shadow: 1px 1px 3px hotpink;
+    // }
     
-    #listamenu2 li{
+    // #listamenu2 li{
                     
-      display:inline;
-      padding-left:20px;
-      padding-right:30px;
-      line-height: 40px;
-    }
-    #listamenu2 a{
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(23, 122, 48);
-    text-decoration: solid;
-    text-shadow: 1px 1px 3px rgb(112, 189, 112);
-    font-family: 'Amatic SC';
-    }
+    //   display:inline;
+    //   padding-left:20px;
+    //   padding-right:30px;
+    //   line-height: 40px;
+    // }
+    // #listamenu2 a{
+    // font-size: 25px;
+    // font-weight: bold;
+    // color: rgb(23, 122, 48);
+    // text-decoration: solid;
+    // text-shadow: 1px 1px 3px rgb(112, 189, 112);
+    // font-family: 'Amatic SC';
+    // }
     
-    #listamenu2 a:hover, a:active{
-    text-shadow: 1px 1px 3px hotpink;
-    }
+    // #listamenu2 a:hover, a:active{
+    // text-shadow: 1px 1px 3px hotpink;
+    // }
     
     
-    .parallaxhome{
-      background-color: #cbe682;
-      background-image: url(/../../assets/images/portadaparallaxhome3.jpg);
-      opacity: 80%;
-      height: 230px;
-      background-attachment: fixed;
-      background-position: top;
-       background-repeat: no-repeat;
-      z-index: 4;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-    
-    .parallaxplaces{
-      background-color: #cbe682;
-      background-image: url(/../../assets/images/parallaxmorocco2.jpg);
-      opacity: 80%;
-      height: 230px;
-      background-attachment: fixed;
-       background-position: top;
-       background-repeat: no-repeat;
-      z-index: 4;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-    .parallaxfood{
-      background-color: #cbe682;
-      background-image: url(/../../assets/images/parallaxfood2.jpg);
-      opacity: 80%;
-      height: 230px;
-      background-attachment: fixed;
-       background-position: top;
-       background-repeat: no-repeat;
-      z-index: 4;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-    .parallaxcontact{
-      background-color: #cbe682;
-      background-image: url(/../../assets/images/parallaxcontactos2.jpg);
-      opacity: 80%;
-       height: 300px;
-       background-attachment: fixed;
-       background-position: 50% 5%;
-       background-repeat: no-repeat;
-     z-index: 4;
-     margin-left: 0px;
-      margin-right: 0px;
-    }
-    .parallaxdestinos{
-      background-color: #cbe682;
-      background-image: url(/../../assets/images//fondodestinos.jpg);
-      opacity: 80%;
-       height: 300px;
-       background-attachment: fixed;
-       background-position: 50% 17%;
-       background-repeat: no-repeat;
-     z-index: 4;
-     margin-left: 0px;
-      margin-right: 0px;
-    }
 
     .countrylist{
       background-size: contain;
@@ -263,78 +175,6 @@
     }
   
     
-    /* contact */
-    
-    
-      .submitbutton{
-        color: rgb(23, 122, 48);
-        background-color: #cbe682;
-        border: none;
-        font-size: 18px;
-        padding: 30px,30px;
-        border-radius: 7px;
-        font-family: 'Amatic SC';
-        height: 30px;
-        width: 120px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        
-      }
-    
-      .formstyle{
-      margin: 10px;
-      }
-    
-    
-      
-    .formcenter{
-      text-align: center;
-      padding: 5px;
-    }
-      
-    .formcenter label{
-      display: inline-block;
-      text-align: right;
-      width: 100px;
-      }
-    
-      .guide{
-        margin-top: 30px;
-        margin-bottom: 50px;
-        text-align: center;
-      }
-    
-      .guide p{
-        padding: 10px;
-      }
-    
-      .guide img{
-        width: 300px;
-      }
-    
-    
-    
-      /* FOOTER*/
-    
-    
-      .footerstyle {
-        margin-top: 80PX;
-        text-align: center;
-        background-color: #cbe682; 
-        height: 80px;
-        padding-top: 5px;
-      }
-    
-      .icon{
-        width: 20px;
-        height: 20px;
-        margin-left: 5px;
-      }
-    
-      .iconsfooter{
-        font-size: 8px;
-      }
-    
      /*reponsive text */       
       @media (max-width: 870px){
         .map {
@@ -356,18 +196,6 @@
         .lateral{
             display: none;
         }
-        #food {
-          text-align: center;
-          margin: auto;
-          height: 350px;
-          
-        }
-        #food img{      
-            float: none;
-            display: block;
-            margin:auto;
-            padding-bottom: 20px;
-        }
         
         .postreciente figcaption{
         text-align: center;
@@ -387,51 +215,7 @@
         line-height: 40px;
     }
     }
-    /* REVISAR INLINE COUNTRYIMG*/ 
     
-    .countrydrop{
-      text-align: center;
-      margin-top: 50px;
-      
-      }
-    
-    .dropbtn {
-      width: 100px;
-      font-size: 35px;
-      font-weight: bold;
-      color: rgb(23, 122, 48);   
-      text-decoration: solid;
-      text-shadow: 1px 1px 3px rgb(112, 189, 112);
-      font-family: 'Amatic SC';
-      padding: 4px;
-      border: none;
-      background-color:#cbe682;
-      z-index: 3;
-      
-    }
-    
-    .dropdown {
-      text-align: center;
-      display: inline-block;
-      padding-right: 0px;
-      height: 500px;
-      
-    }
-    
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color:#eff7da;
-      text-align: center;
-      min-width: 130px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      opacity: 60%;
-      z-index: 1;
-      color: rgb(23, 122, 48);
-      z-index: 2;
-      
-    }
 
     .postreciente{
       text-align: center;
@@ -458,38 +242,4 @@
       z-index: 2;
     }
     
-    .countryimgamerica{
-      background-image: url(/../../assets/images/countryamerica.jpg); 
-      height: 500px; 
-      width: 130px;
-      background-position: center;
-    }
-    .countryimgeu{
-      background-image: url(/../../assets/images/countryeurope.jpg); 
-      height: 500px; 
-      width: 130px;
-    }
-    .countryimgafrica{
-      background-image: url(/../../assets/images/countryafrica.jpg); 
-      height: 500px; 
-      width: 130px;
-      background-position: center;
-      
-    }
-    .countryimgasia{
-      background-image: url(/../assets/images/fondoasia.jpg); 
-      height: 500px; 
-      width: 130px;
-    }
-    .countryimgoceania{
-      background-image: url(/../assets/images/countryoceania.jpg); 
-      height: 500px; 
-      width: 130px;
-      background-position: 20%;
-    }
-    .dropdown:hover .dropdown-content {display: block;
-      z-index: 2;
-    opacity: 80%;}
-    
-    
-    .dropdown:hover .dropbtn {text-shadow: 1px 1px 3px hotpink;}
+   

@@ -19,6 +19,7 @@ export class ArrowTopComponent {
 
   @HostListener('window:scroll', ['$event']) onScroll() {
     
+    ///check if user is scrolling & if arrow should be rendered
     if (window.screenY == 0) {
       this.scrolling = false;
     }
@@ -28,9 +29,7 @@ export class ArrowTopComponent {
     } else {
       this.showArrow = false;
     }
-    setTimeout(()=>{
-        this.isScrolling=false;
-    },1000);
+    this.arrowFadeoutController();
   }
 
 
@@ -58,5 +57,13 @@ export class ArrowTopComponent {
         }
       }, 100);
     }
+  }
+
+
+  ///clears the arrow after a delay when stop scrolling
+  arrowFadeoutController(){
+    setTimeout(()=>{
+        this.isScrolling=false;
+    },1000);
   }
 }

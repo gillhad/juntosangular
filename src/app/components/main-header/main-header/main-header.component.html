@@ -23,17 +23,22 @@
 <meta name="theme-color" content="#774040" />
 <!--<language-selector></language-selector>-->
 <h1 class="topmenu">
-    <img alt="Logo" src="/../assets/images/LogoPSD.png" />
-  </h1>
-  <div [ngClass]="navbarIsFixed?  'onSticky' : ''"> </div>
-  <nav [ngClass]="navbarIsFixed? 'sticky' : 'noSticky'" (scroll)="onScroll()" class="sticky,topnav,responsive" id="navbar">
-    <ul class="topbar" id="listamenu">
-      <li><a routerLink="/home" i18n-title title="Inicio">Inicio</a></li>
-      <li><a routerLink="/destinations"> Destinos</a></li>
-      <li><a routerLink="/food">Comida</a></li> 
-      <li><a routerLink="/contact">Contacto</a></li>
-    </ul>
-  </nav>
+  <img alt="Logo" src="/../assets/images/LogoPSD.png" />
+</h1>
+<div [ngClass]="navbarIsFixed ? 'onSticky' : ''"></div>
+<nav
+  [ngClass]="navbarIsFixed ? 'sticky' : 'noSticky'"
+  (scroll)="onScroll()"
+  class="sticky,topnav,responsive"
+  id="navbar"
+>
+  <ul class="topbar" id="listamenu">
+    <li><a routerLink="/home" i18n-title title="Inicio">Inicio</a></li>
+    <li><a routerLink="/destinations"> Destinos</a></li>
+    <li><a routerLink="/food">Comida</a></li>
+    <li><a routerLink="/contact">Contacto</a></li>
+  </ul>
+</nav>
 <!-- <header class="en">
           <nav class="language">
               <a href="index.html"><img alt="spainflag" src="../assets/images/spainflag.png"></a>
@@ -49,4 +54,4 @@
             </ul>
           </nav>
       </header>-->
-<div class="parallaxsize"  [ngClass]="parallaxView"></div>
+<div class="parallaxsize" [ngClass]="parallaxView"></div>

@@ -8,28 +8,28 @@
     </div>                
       <form class="formstyle" action="info.txt" target="_self" >
         <div class="formcenter">
-        <label for="name"> Nombre: </label>
-        <input id="name" type="text" placeholder="Nombre">
+       <label for="nameInput" >Nombre: </label>
+        <input id="nameInput" type="text" [(ngModel)]="name" name="nameInput" placeholder="Nombre">
       </div>
         <div class="formcenter">
         <label for="apellido">Apellido: </label>
-        <input id="apellido" type="text" placeholder="Apellido">
+        <input id="apellido" type="text" placeholder="Apellido" [(ngModel)]="surname" name="surnameInput">
       </div>
         <div class="formcenter">
         <label for="country">País: </label>
-        <input id="country" type="text">
+        <input id="country" type="text" [(ngModel)]="country" name="countryInput">
       </div>
         <div class="formcenter">                  
         <label for="dias" >Dias: </label>
-        <input id="dias" type="number">
+        <input id="dias" type="number" [(ngModel)]="days" name="daysInput">
       </div>
        <div class="formcenter"> 
         <label for="email">Correo: </label>
-          <input type="email" id="email" name="email" placeholder="name@example.com"  required>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required [(ngModel)]="mail" name="mailInput">
           <input type="hidden">
         </div>
         <div class="formcenter">
-          <input class="submitbutton" type="submit" value="Enviar" onclick="alert('Propuesta en marcha!')">
+          <input class="submitbutton" type="submit" value="Enviar" (click)="sendAlert()">
         </div>
         </form>
         <div class="guide">

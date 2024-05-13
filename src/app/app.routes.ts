@@ -8,6 +8,7 @@ import { HomeViewComponent } from './Home/home-view/home-view.component';
 import { ContactViewComponent } from './contact/contact-view/contact-view/contact-view.component';
 import { FoodViewComponent } from './food/food-view/food-view/food-view.component';
 import { DestMorroccoComponent } from './destination/destinations/dest-mor/dest-morrocco/dest-morrocco.component';
+import { NoFoundComponent } from './components/no-found/no-found/no-found.component';
 
 export const routes: Routes = [
    {path:"destinations",component:DestHomeComponent},
@@ -15,5 +16,5 @@ export const routes: Routes = [
    {path:"home",component:HomeViewComponent},
    {path:"food",component:FoodViewComponent},
    {path:"contact",component:ContactViewComponent},
-   {path:"**", component: HomeViewComponent}
+   {path:"**", component: NoFoundComponent}
 ];
