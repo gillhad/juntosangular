@@ -1,0 +1,52 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Amatic%20SC"
+/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/iconos/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/iconos/favicon-16x16.png"
+/>
+<link rel="manifest" href="/iconos/site.webmanifest" />
+<link rel="mask-icon" href="/iconos/safari-pinned-tab.svg" color="#5bbad5" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#774040" />
+<!--<language-selector></language-selector>-->
+<h1 class="topmenu">
+    <img alt="Logo" src="/../assets/images/LogoPSD.png" />
+  </h1>
+  <div [ngClass]="navbarIsFixed?  'onSticky' : ''"> </div>
+  <nav [ngClass]="navbarIsFixed? 'sticky' : 'noSticky'" (scroll)="onScroll()" class="sticky,topnav,responsive" id="navbar">
+    <ul class="topbar" id="listamenu">
+      <li><a routerLink="/home" i18n-title title="Inicio">Inicio</a></li>
+      <li><a routerLink="/destinations"> Destinos</a></li>
+      <li><a routerLink="/food">Comida</a></li> 
+      <li><a routerLink="/contact">Contacto</a></li>
+    </ul>
+  </nav>
+<!-- <header class="en">
+          <nav class="language">
+              <a href="index.html"><img alt="spainflag" src="../assets/images/spainflag.png"></a>
+              <a href="index.html?lang=en"><img alt="EEUUflag" src="../assets/images/EEUUflag.png"></a>
+          </nav>
+          <h1 class="topmenu"><img alt="Logo" src="../assets/images/LogoPSD.png" ></h1>                       
+          <nav class="topnav,responsive,sticky" id="navbaren">
+            <ul class="topbar" id="listamenu2">
+              <li><a  href="index.html?lang=en" >Home</a></li>
+              <li><a  href="Destinos/destinos.html?lang=en" >Places</a></li>
+              <li><a  href="Comida/comida.html?lang=en">Food</a></li>
+              <li><a  href="Contacto/contacto.html?lang=en">Contact</a> </li>                                          
+            </ul>
+          </nav>
+      </header>-->
+<div class="parallaxsize"  [ngClass]="parallaxView"></div>

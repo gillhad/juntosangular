@@ -1,0 +1,46 @@
+.commonlist {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(23, 122, 48);
+    text-decoration: solid;
+    text-shadow: 1px 1px 3px rgb(112, 189, 112);
+    font-family: 'Amatic SC';
+    padding-bottom: 80px;
+    }
+.commonlist li{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}    
+.commonlist  a{
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(23, 122, 48);
+  text-decoration: solid;
+  text-shadow: 1px 1px 3px rgb(112, 189, 112);
+  font-family: 'Amatic SC';
+}
+.commonlist a:hover{
+  text-shadow: 1px 1px 3px hotpink;
+}
+
+
+.commonlist img{
+  height: 200px; width: 200px;
+  border-radius: 5%;
+}
+
+ img:hover{
+  opacity: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.postreciente figcaption{
+  width: 200px;
+  padding-top: 5px;
+  font-size: 20px;
+  color:  rgb(23, 122, 48);
+}
+

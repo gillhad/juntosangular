@@ -1,0 +1,107 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Amatic%20SC"
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../iconos/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../iconos/favicon-16x16.png"
+  />
+  <link rel="manifest" href="../iconos/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="../iconos/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#774040" />
+  <title>viajando en pareja</title>
+</head>
+<body>
+  <main-header parallaxView="parallaxplaces"></main-header>
+  <main>
+    <section>
+      <div class="map">
+        <img
+          src="/../assets/images/Continentscountries.png"
+          alt="mapa paises"
+          usemap="#countries"
+          width="800"
+          height="400"
+        />
+        <map class="es" name="countries">
+          <area
+            alt="marruecos"
+            shape="circle"
+            coords="326,142,10"
+            href="/Destinos/marruecos.html"
+          />
+        </map>
+      </div>
+      <article>
+        <ul class="countrydrop">
+          <li class="dropdown">
+            <div>
+              <div id="america" class="countryimgamerica">
+                <button class="dropbtn">America</button>
+                <div class="dropdown-content">
+                  <a href="#">pronto</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <div id="europa" class="countryimgeu">
+              <button class="dropbtn">Europa</button>
+              <div class="dropdown-content">
+                <a href="#">pronto</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <div id="africa" class="countryimgafrica">
+              <button class="dropbtn">Africa</button>
+
+              <div class="dropdown-content">
+                <a routerLink="/destinations/morocco">Marruecos</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <div id="asia" class="countryimgasia">
+              <button class="dropbtn">Asia</button>
+              <div class="dropdown-content">
+                <a href="">pronto</a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <div id="oceania" class="countryimgoceania">    
+              <button class="dropbtn">Oceania</button>
+              <div class="dropdown-content">
+                <a href="">pronto</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer-component></footer-component>
+
+  <script src="../CSS/myscript.js"></script>
+  <!-- Aqui linkaremos el fichero de nuestros javascripts -->
+</body>
+</html>

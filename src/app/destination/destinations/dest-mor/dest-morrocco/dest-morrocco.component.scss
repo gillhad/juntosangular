@@ -1,0 +1,52 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    }
+
+section{
+    align-items: center;
+      width: 70%;
+      position: relative;
+      align-items: center;
+      align-self: center;
+      left: 20%;
+}
+
+.espacio{
+    margin-top: 10px;
+}
+
+.minititulos{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 40px;
+    color: rgba(104, 46, 23, 0.829);
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    
+}
+
+/*destinos*/
+.daystyle{
+padding-top: 50px;
+}
+.daystyle p{
+padding-bottom: 4px;
+}
+
+.daystyle li{
+list-style-type: square;
+padding-bottom: 5px;
+}
+
+.linkJump{
+    font-family: Amatic SC;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: rgb(23, 122, 48);
+}
+
+.linkJump:hover{
+    cursor: pointer;
+   text-shadow: 1px 1px darkgrey;
+}

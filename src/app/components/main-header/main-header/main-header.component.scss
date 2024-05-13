@@ -1,0 +1,531 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+article,
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*header*/
+.topmenu img {
+  height: 100px;
+}
+
+.topmenu {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-family: "Amatic SC";
+  font-style: italic;
+  color: rgb(226, 99, 120);
+  font-weight: bolder;
+}
+
+.topbar {
+  text-align: center;
+  background-color: #cbe682;
+  height: 40px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.topnav {
+  opacity: 100%;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 50;
+}
+
+.sticky {
+  position: fixed;
+  position: -webkit-sticky;
+  top: 0;
+  opacity: 100%;
+  width: 100%;
+  z-index: 50;
+}
+
+.noSticky{
+  opacity: 80%;
+  position: static;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.onSticky{
+  height: 40px;
+}
+
+.flechatop {
+  opacity: 40%;
+  display: block;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+}
+.flechatop img {
+  height: 40px;
+}
+
+:target::before {
+  content: "";
+  position: relative;
+  display: block;
+  top: 100px;
+}
+
+/* body */
+.responsive {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.map {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.explain {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 30px;
+}
+
+.commonlist {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(23, 122, 48);
+  text-decoration: solid;
+  text-shadow: 1px 1px 3px rgb(112, 189, 112);
+  font-family: "Amatic SC";
+  padding-bottom: 80px;
+}
+.commonlist li {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.commonlist a {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(23, 122, 48);
+  text-decoration: solid;
+  text-shadow: 1px 1px 3px rgb(112, 189, 112);
+  font-family: "Amatic SC";
+}
+.commonlist a:hover {
+  text-shadow: 1px 1px 3px hotpink;
+}
+
+#listamenu li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 30px;
+  line-height: 40px;
+}
+#listamenu a {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(23, 122, 48);
+  text-decoration: solid;
+  text-shadow: 1px 1px 3px rgb(112, 189, 112);
+  font-family: "Amatic SC";
+}
+
+#listamenu a:hover,
+a:active {
+  text-shadow: 1px 1px 3px hotpink;
+}
+
+#listamenu2 li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 30px;
+  line-height: 40px;
+}
+#listamenu2 a {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(23, 122, 48);
+  text-decoration: solid;
+  text-shadow: 1px 1px 3px rgb(112, 189, 112);
+  font-family: "Amatic SC";
+}
+
+#listamenu2 a:hover,
+a:active {
+  text-shadow: 1px 1px 3px hotpink;
+}
+
+.parallaxhome {
+  background-color: #cbe682;
+  background-image: url(/../../assets/images/portadaparallaxhome3.jpg);
+  opacity: 80%;
+  height: 230px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.parallaxplaces {
+  background-color: #cbe682;
+  background-image: url(/../../assets/images/parallaxmorocco2.jpg);
+  opacity: 80%;
+  height: 230px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.parallaxfood {
+  background-color: #cbe682;
+  background-image: url(/../../assets/images/parallaxfood2.jpg);
+  opacity: 80%;
+  height: 230px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.parallaxcontact {
+  background-color: #cbe682;
+  background-image: url(/../../assets/images/parallaxcontactos2.jpg);
+  opacity: 80%;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: 50% 5%;
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.parallaxdestinos {
+  background-color: #cbe682;
+  background-image: url(/../../assets/images//fondodestinos.jpg);
+  opacity: 80%;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: 50% 17%;
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.countrylist {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/Continentsm.jpg);
+  background-position: 50% 40%;
+}
+
+.espacio {
+  margin-top: 10px;
+}
+
+.minititulos {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+  color: rgba(104, 46, 23, 0.829);
+  font-family: "Amatic SC";
+  font-weight: bolder;
+}
+
+/*destinos*/
+.daystyle {
+  padding-top: 50px;
+}
+.daystyle p {
+  padding-bottom: 4px;
+}
+
+.daystyle li {
+  list-style-type: square;
+  padding-bottom: 5px;
+}
+
+/*food*/
+.food {
+  height: 200px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.foodmaintitleleft {
+  color: green;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+  margin-left: 20%;
+}
+.foodmaintitleright {
+  color: green;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: right;
+  margin-right: 20%;
+}
+.foodtitle {
+  color: green;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.foodexplainright img {
+  float: left;
+  margin-left: 10%;
+  height: 200px;
+  width: 200px;
+  padding-right: 10px;
+}
+.foodexplainleft img {
+  float: right;
+  margin-left: 10%;
+  height: 200px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.foodexplainleft {
+  margin-left: 5%;
+  text-align: justify;
+}
+.foodexplainright {
+  margin-right: 10%;
+  text-align: justify;
+}
+
+/* contact */
+
+.submitbutton {
+  color: rgb(23, 122, 48);
+  background-color: #cbe682;
+  border: none;
+  font-size: 18px;
+  padding: 30px, 30px;
+  border-radius: 7px;
+  font-family: "Amatic SC";
+  height: 30px;
+  width: 120px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.formstyle {
+  margin: 10px;
+}
+
+.formcenter {
+  text-align: center;
+  padding: 5px;
+}
+
+.formcenter label {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+}
+
+.guide {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.guide p {
+  padding: 10px;
+}
+
+.guide img {
+  width: 300px;
+}
+
+/* FOOTER*/
+
+.footerstyle {
+  margin-top: 80px;
+  text-align: center;
+  background-color: #cbe682;
+  height: 80px;
+  padding-top: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.iconsfooter {
+  font-size: 8px;
+}
+
+/*reponsive text */
+@media (max-width: 870px) {
+  .map {
+    display: none;
+  }
+}
+
+@media (min-width: 871px) {
+  .countrylist {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .lateral {
+    display: none;
+  }
+  #food {
+    text-align: center;
+    margin: auto;
+    height: 350px;
+  }
+  #food img {
+    float: none;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .postreciente figcaption {
+    text-align: center;
+  }
+  .dropdown {
+    display: list-item;
+  }
+}
+@media (max-width: 600px) {
+  #listamenu li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 40px;
+  }
+}
+/* REVISAR INLINE COUNTRYIMG*/
+
+.countrydrop {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dropbtn {
+  width: 100px;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(23, 122, 48);
+  text-decoration: solid;
+  text-shadow: 1px 1px 3px rgb(112, 189, 112);
+  font-family: "Amatic SC";
+  padding: 4px;
+  border: none;
+  background-color: #cbe682;
+  z-index: 3;
+}
+
+.dropdown {
+  text-align: center;
+  display: inline-block;
+  padding-right: 0px;
+  height: 500px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eff7da;
+  text-align: center;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  opacity: 60%;
+  z-index: 1;
+  color: rgb(23, 122, 48);
+  z-index: 2;
+}
+
+.postreciente {
+  text-align: center;
+}
+
+.postreciente li {
+  padding-left: 0;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+.dropdown-content a {
+  color: rgb(23, 122, 48);
+  padding: 12px 16px;
+  font-family: "Amatic SC";
+  font-size: 20px;
+  text-decoration: solid;
+  font-weight: bolder;
+  display: block;
+  z-index: 2;
+}
+
+.countryimgamerica {
+  background-image: url(/../../assets/images/countryamerica.jpg);
+  height: 500px;
+  width: 130px;
+  background-position: center;
+}
+.countryimgeu {
+  background-image: url(/../../assets/images/countryeurope.jpg);
+  height: 500px;
+  width: 130px;
+}
+.countryimgafrica {
+  background-image: url(/../../assets/images/countryafrica.jpg);
+  height: 500px;
+  width: 130px;
+  background-position: center;
+}
+.countryimgasia {
+  background-image: url(/../assets/images/fondoasia.jpg);
+  height: 500px;
+  width: 130px;
+}
+.countryimgoceania {
+  background-image: url(/../assets/images/countryoceania.jpg);
+  height: 500px;
+  width: 130px;
+  background-position: 20%;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 2;
+  opacity: 80%;
+}
+
+.dropdown:hover .dropbtn {
+  text-shadow: 1px 1px 3px hotpink;
+}
