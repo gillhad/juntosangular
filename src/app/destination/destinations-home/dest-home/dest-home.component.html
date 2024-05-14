@@ -41,14 +41,12 @@
           width="800"
           height="400"
         />
-        <map class="es" name="countries">
-          <area
-            alt="marruecos"
-            shape="circle"
-            coords="326,142,10"
-            href="/Destinos/marruecos.html"
-          />
-        </map>
+        <map-component
+        *ngFor="let country of mapCountries"
+        name="{{ country.name }}"
+        path="{{ country.path }}"
+        coords="{{ country.coords }}"
+      ></map-component>
       </div>
       <article>
         <ul class="countrydrop">
