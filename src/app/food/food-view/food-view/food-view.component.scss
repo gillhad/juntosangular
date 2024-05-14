@@ -1,327 +1,217 @@
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
-    }
-    
-    article,main{
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-    
-    /*header*/
-    .topmenu img{
-      height: 100px;
-    }
-    
-    
-    .topmenu{
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 60px;   
-      font-family: 'Amatic SC';
-      font-style: italic;
-      color: rgb(226, 99, 120);
-      font-weight: bolder;
-    }
-    
-    .topbar{
-      text-align: center;
-      background-color: #cbe682; 
-      opacity: 80%;
-      height: 40px;
-    }
-    
-    .center {
+  font-family: Comfortaa;
+  box-sizing: border-box;
+}
+
+article,
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.topnav {
+  opacity: 100%;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 50;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.flechatop {
+  opacity: 40%;
+  display: block;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+}
+.flechatop img {
+  height: 40px;
+}
+
+:target::before {
+  content: "";
+  position: relative;
+  display: block;
+  top: 100px;
+}
+
+/* body */
+.responsive {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.map {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.explain {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 30px;
+}
+
+section {
+  align-items: center;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  align-self: center;
+}
+
+.espacio {
+  margin-top: 10px;
+}
+
+.minititulos {
+  font-family: Amatic SC;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+  color: rgba(104, 46, 23, 0.829);
+
+  font-weight: bolder;
+}
+
+/*food*/
+.food {
+  height: 200px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.foodmaintitleleft {
+  font-family: Amatic SC;
+  font-weight: 500;
+  color: green;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+  margin-left: 20%;
+}
+.foodmaintitleright {
+  font-family: Amatic SC;
+  font-weight: 500;
+  color: green;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: right;
+  margin-right: 20%;
+}
+.foodtitle {
+  font-family: Amatic SC;
+  font-weight: 500;
+  color: green;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.foodexplainright img {
+  border-radius: 5%;
+  float: left;
+  margin-left: 5%;
+  width: 200px;
+  margin-right: 5%;
+}
+.foodexplainleft img {
+  border-radius: 5%;
+  float: right;
+  margin-left: 5%;
+  width: 200px;
+  margin-right: 5%;
+}
+
+.foodexplainleft {
+  margin-left: 5%;
+  text-align: justify;
+}
+.foodexplainright {
+  align-items: end;
+  margin-right: 10%;
+  text-align: justify;
+}
+
+.with-limits {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  flex-grow: unset;
+  align-content: center;
+  margin: 0% 10% 0% 10%;
+}
+
+/*reponsive text */
+@media (max-width: 870px) {
+  .map {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 1220px){
+ .with-limits{
+  margin: 0% 0% 0% 0%;
+ }
+}
+
+@media (min-width: 871px) {
+  .countrylist {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .lateral {
+    display: none;
+  }
+  #food {
+    text-align: center;
+    margin: auto;
+    //height: 350px;
+  }
+  #food img {
+    float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    
-    }
-    .topnav{
-      opacity: 100%;
-      overflow: hidden;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      z-index: 50;
-    }
-    
-    .sticky {
-      position: sticky;
-      position: -webkit-sticky;
-      top: 0;
-      width: 100%;
-      z-index: 50;
-    }
-    
-    .sticky + .content {
-      padding-top: 60px;
-    }
-    .flechatop{
-      opacity: 40%;
-      display: block;
-      bottom: 20px;
-      right: 20px;
-      position: fixed;
-    }
-    .flechatop img{
-      height: 40px;
-    }
-    
-    :target::before{
-      content: "";
-      position: relative;
-      display: block;
-      top: 100px;
-    }
-    
-    /* body */
-    .responsive {
-        max-width: 100%;
-        height: auto;
-        width: auto;
-        
-        
-      }
-    
-      .map{
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
-      }
-    
-     .explain{
-       text-align: center;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     height: 30px;
-     }
-    
-     .commonlist {
-      list-style: none;
-      text-align: center;
-      padding-bottom: 20px;
-      font-size: 40px;
-      font-weight: bold;
-      color: rgb(23, 122, 48);
-      text-decoration: solid;
-      text-shadow: 1px 1px 3px rgb(112, 189, 112);
-      font-family: 'Amatic SC';
-      padding-bottom: 80px;
-      }
-  .commonlist li{
-    padding-top: 10px;
+    margin: auto;
     padding-bottom: 20px;
-    font-size: 40px;
-  }    
-  .commonlist  a{
-    font-size: 40px;
-    font-weight: bold;
-    color: rgb(23, 122, 48);
-    text-decoration: solid;
-    text-shadow: 1px 1px 3px rgb(112, 189, 112);
-    font-family: 'Amatic SC';
   }
-  .commonlist a:hover{
-    text-shadow: 1px 1px 3px hotpink;
+
+  .postreciente figcaption {
+    text-align: center;
   }
-    
-    #listamenu li{
-                    
-        display:inline;
-        padding-left:20px;
-        padding-right:30px;
-        line-height: 40px;
-    }
-    #listamenu a{
-      font-size: 25px;
-      font-weight: bold;
-      color: rgb(23, 122, 48);
-      text-decoration: solid;
-      text-shadow: 1px 1px 3px rgb(112, 189, 112);
-      font-family: 'Amatic SC';
-    }
-    
-    #listamenu a:hover, a:active{
-      text-shadow: 1px 1px 3px hotpink;
-    }
-    
-    #listamenu2 li{
-                    
-      display:inline;
-      padding-left:20px;
-      padding-right:30px;
-      line-height: 40px;
-    }
-    #listamenu2 a{
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(23, 122, 48);
-    text-decoration: solid;
-    text-shadow: 1px 1px 3px rgb(112, 189, 112);
-    font-family: 'Amatic SC';
-    }
-    
-    #listamenu2 a:hover, a:active{
-    text-shadow: 1px 1px 3px hotpink;
-    }
-    
-
-    section{
-      align-items: center;
-      width: 50%;
-      position: relative;
-      align-items: center;
-      align-self: center;
-      left: 25%;
-    }
-    
-
-    
-      .espacio{
-          margin-top: 10px;
-      }
-    
-      .minititulos{
-        font-family: Amatic SC;
-          text-align: center;
-          font-size: 40px;
-          padding-bottom: 40px;
-          color: rgba(104, 46, 23, 0.829);
-         
-          font-weight: bolder;
-      }
-    
-    /*destinos*/
-    .daystyle{
-      padding-top: 50px;
-    }
-    .daystyle p{
-      padding-bottom: 4px;
-    }
-    
-    .daystyle li{
-      list-style-type: square;
-      padding-bottom: 5px;
-    }
-    
-    /*food*/
-    .food{
-      height: 200px;
-      margin-bottom: 50px;
-      padding-bottom: 20px;
-    }
-    .foodmaintitleleft{
-      font-family: Amatic SC;
-      font-weight: 500;
-      color: green;
-      font-size: 20px;
-      padding-bottom: 20px;
-      padding-top: 20px;
-      text-align: left;
-      margin-left: 20%;
-      
-    }
-    .foodmaintitleright{
-      font-family: Amatic SC;
-      font-weight: 500;
-      color: green;
-      font-size: 20px;
-      padding-bottom: 20px;
-      padding-top: 20px;
-      text-align: right;
-      margin-right: 20%;
-      
-    }
-    .foodtitle{
-      font-family: Amatic SC;
-      font-weight: 500;
-      color: green;
-      font-size: 18px;
-      padding-bottom: 10px;
-    }
-    
-    .foodexplainright img{
-        
-        border-radius: 5%;
-       float: left;
-       margin-left: 5%;
-       height: 200px;
-       width: 200px;
-       margin-right: 5%;
-    }
-    .foodexplainleft img{
-        border-radius: 5%;
-       float: right;
-       margin-left: 5%;
-       height: 200px;
-       width: 200px;
-       margin-right: 5%;
-    }
-    
-    .foodexplainleft{
-       margin-left: 5%;
-       text-align: justify;
-     
-    }
-    .foodexplainright{
-      align-items: end;
-       margin-right: 10%;
-       text-align:justify ;
-    }
-    
-   
-    
-    
-     /*reponsive text */       
-      @media (max-width: 870px){
-        .map {
-            display: none;
-            
-        }
-      }
-    
-    
-    @media (min-width : 871px)  {
-    .countrylist{
-        display: none;
-    }
-    
-    
-    }
-    
-    @media (max-width : 800px)  {
-        .lateral{
-            display: none;
-        }
-        #food {
-          text-align: center;
-          margin: auto;
-          height: 350px;
-          
-        }
-        #food img{      
-            float: none;
-            display: block;
-            margin:auto;
-            padding-bottom: 20px;
-        }
-        
-        .postreciente figcaption{
-        text-align: center;
-        
-        
-        }
-        .dropdown{
-          display: list-item ;
-        }
-      }
-    @media (max-width : 600px){
-      #listamenu li{
-                    
-        display:inline;
-        padding-left:5px;
-        padding-right:5px;
-        line-height: 40px;
-    }
-    }
-     
+  .dropdown {
+    display: list-item;
+  }
+}
+@media (max-width: 600px) {
+  #listamenu li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 40px;
+  }
+  section {
+    width: 100%;
+    left: 0%;
+  }
+}
