@@ -1,4 +1,8 @@
 # JuntosAngular
+This is a personal project to learn and practice my angular skill, fortunately it will become a full blog of my adventures around the world 
+
+If you want to check the progress: 
+https://viajandojuntosangular.netlify.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
