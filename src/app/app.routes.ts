@@ -11,6 +11,7 @@ import { DestMorroccoComponent } from './destination/destinations/dest-mor/dest-
 import { NoFoundComponent } from './components/no-found/no-found/no-found.component';
 
 export const routes: Routes = [
+   {path:"", redirectTo:"home", pathMatch:"full"},
    {path:"destinations",component:DestHomeComponent},
    {path:"destinations/morocco",component:DestMorroccoComponent},
    {path:"home",component:HomeViewComponent},

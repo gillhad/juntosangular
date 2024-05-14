@@ -119,6 +119,70 @@ a:active {
 }
 
 
+.parallaxhome{
+  background-color: #cbe682;
+  background-image: url(/../assets/images/portadaparallaxhome.jpg);
+  opacity: 80%;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: top;
+   background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.parallaxplaces{
+  background-color: #cbe682;
+  background-image: url(/../assets/images/parallaxmorocco2.jpg);
+  opacity: 80%;
+  height: 300px;
+  background-attachment: fixed;
+   background-position: top;
+   background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.parallaxfood{
+  background-color: #cbe682;
+  background-image: url(/../assets/images/parallaxfood2.jpg);
+  opacity: 80%;
+  height: 300px;
+  background-attachment: fixed;
+   background-position: top;
+   background-repeat: no-repeat;
+  z-index: 4;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.parallaxcontact{
+  background-color: #cbe682;
+  background-image: url(/../assets/images/contactfullshort2.jpg);
+  opacity: 80%;
+   height: 300px;
+   background-size: 50% 80%;
+   background-attachment: fixed;
+   background-position: 50% -85%;
+   background-repeat: no-repeat;
+ z-index: 4;
+ margin-left: 0px;
+  margin-right: 0px;
+}
+.parallaxdestinos{
+  background-color: #cbe682;
+  background-image: url(/../assets/images/fondodestinos.jpg);
+  opacity: 80%;
+   height: 300px;
+   background-attachment: fixed;
+   background-position: 50% 17%;
+   background-repeat: no-repeat;
+ z-index: 4;
+ margin-left: 0px;
+  margin-right: 0px;
+}
+
+
 /*reponsive text */
 @media (max-width: 870px) {
   .map {
