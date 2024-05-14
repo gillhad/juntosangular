@@ -27,10 +27,10 @@ sendAlert(){
 }
 
 formValidator(){
-  //addded a potato message
-  if(this.name.length<1 && this.surname.length<1 && this.country.length<1 && this.days.length<1 && this.mail.length<1){
+  if(this.name.length<1 || this.surname.length<1 || this.country.length<1 || this.days.length<1 || this.mail.length<1){
         return false;
-  }
+  }else{
   return true;
+  }
 }
 }
