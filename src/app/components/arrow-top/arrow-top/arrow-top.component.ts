@@ -11,37 +11,50 @@ import { Component, HostListener } from '@angular/core';
 export class ArrowTopComponent {
   constructor(private scroller: ViewportScroller) {}
 
+  
   public showArrow: boolean = false;
-  public scrolling: boolean = false;
+  public scrollingTop: boolean = false;
+  public overTheArrow:boolean = false;
   public isScrolling: boolean = false;
 
   public pos: number = 0;
+  
 
   @HostListener('window:scroll', ['$event']) onScroll() {
-    
     ///check if user is scrolling & if arrow should be rendered
     if (window.screenY == 0) {
-      this.scrolling = false;
+      this.scrollingTop = false;
     }
     if (window.scrollY > 175) {
       this.isScrolling = true;
       this.showArrow = true;
     } else {
       this.showArrow = false;
+      
     }
+     
     this.arrowFadeoutController();
+    
   }
 
+  @HostListener('mousemove',['$evemt']) onMousePosition(event:any){
+    this.isScrolling = true;
+  };
 
   ///controls if can go to top
   async scrollToTop() {
-    if (this.scrolling) {
+    if (this.scrollingTop) {
       return;
     }
-    this.scrolling = true;
+    this.scrollingTop = true;
     await this.animateScroll();
 
     //}while(pos>0);
+  }
+
+  onMouseLeave(){
+    this.isScrolling = false;
+    //this.arrowFadeoutController();
   }
 
 
@@ -53,7 +66,7 @@ export class ArrowTopComponent {
         this.scroller.scrollToPosition([0, this.pos]);
         this.pos--;
         if (this.pos == 0) {
-          this.scrolling = false;
+          this.scrollingTop = false;
         }
       }, 100);
     }
@@ -63,7 +76,9 @@ export class ArrowTopComponent {
   ///clears the arrow after a delay when stop scrolling
   arrowFadeoutController(){
     setTimeout(()=>{
-        this.isScrolling=false;
-    },1000);
+      if(!this.overTheArrow){
+      this.isScrolling = false;
+      }
+  },1000);
   }
 }
