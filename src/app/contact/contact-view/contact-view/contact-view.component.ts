@@ -20,7 +20,7 @@ export class ContactViewComponent {
 
 sendAlert(){
   if(this.formValidator()){
-  alert("Gracias " + this.name + "!\n Espero que disfrutes tu viaje a " + this.country+".\n En breve recibirás un correo con información para tu viaje");
+  alert("Gracias " + this.name + "!\nEspero que disfrutes tu viaje a " + this.country+".\nEn breve recibirás un correo con información para tu viaje");
   }else{
     alert("Si no nos pasas toda la información no podremos ayduarte!");
   }
