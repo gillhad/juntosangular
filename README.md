@@ -1,4 +1,5 @@
 # JuntosAngular
+This is a personal project to learn and practice my angular skill, fortunately it will become a full blog of my adventures around the world
 If you want to check the progress:
 https://viajandojuntosangular.netlify.app/
 
