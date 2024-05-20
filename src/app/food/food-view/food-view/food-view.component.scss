@@ -99,31 +99,12 @@ section {
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
-.foodmaintitleleft {
-  font-family: Amatic SC;
-  font-weight: 500;
-  color: green;
-  font-size: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: left;
-  margin-left: 20%;
-}
-.foodmaintitleright {
-  font-family: Amatic SC;
-  font-weight: 500;
-  color: green;
-  font-size: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: right;
-  margin-right: 20%;
-}
+
 .foodtitle {
   font-family: Amatic SC;
   font-weight: 500;
   color: green;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 
@@ -159,6 +140,7 @@ section {
   align-content: center;
   margin: 0% 10% 0% 10%;
 }
+
 
 /*reponsive text */
 @media (max-width: 870px) {
