@@ -13,13 +13,17 @@ export class ArrowTopComponent {
 
   
   public showArrow: boolean = false;
+  ///controls if page is scrolling
   public scrollingTop: boolean = false;
+  ///
   public overTheArrow:boolean = false;
   public isScrolling: boolean = false;
 
   public pos: number = 0;
   
 
+
+  ///Check scroll in the page
   @HostListener('window:scroll', ['$event']) onScroll() {
     ///check if user is scrolling & if arrow should be rendered
     if (window.screenY == 0) {
@@ -32,13 +36,17 @@ export class ArrowTopComponent {
       this.showArrow = false;
       
     }
-     
+     if(!this.overTheArrow){
     this.arrowFadeoutController();
+     }
     
   }
 
-  @HostListener('mousemove',['$evemt']) onMousePosition(event:any){
+
+  ///Check mouse position over the arrow
+  @HostListener('mousemove',['$event']) onMousePosition(event:any){
     this.isScrolling = true;
+    this.overTheArrow = true;
   };
 
   ///controls if can go to top
@@ -48,13 +56,11 @@ export class ArrowTopComponent {
     }
     this.scrollingTop = true;
     await this.animateScroll();
-
-    //}while(pos>0);
   }
 
   onMouseLeave(){
     this.isScrolling = false;
-    //this.arrowFadeoutController();
+    this.overTheArrow  =false;
   }
 
 
@@ -76,6 +82,7 @@ export class ArrowTopComponent {
   ///clears the arrow after a delay when stop scrolling
   arrowFadeoutController(){
     setTimeout(()=>{
+      ///avoids fade 
       if(!this.overTheArrow){
       this.isScrolling = false;
       }
